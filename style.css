@@ -11,7 +11,9 @@ img{
     max-width: 100%;
 }
 .hamburger{
-    width: 20px;
+    display: none;
+}
+.cancel{
     display: none;
 }
 .container{
@@ -221,8 +223,11 @@ nav a:hover{
     padding-block: 60px;
     margin-top: 50px;
 }
-.logoimg{
+.logoimage{
     width: 150px;
+}
+.form{
+    margin-left: 30px;
 }
 .quick{
     color: red;
@@ -267,17 +272,37 @@ textarea{
     border: 1px solid red;
 }
 @media (max-width:940px){
-    .navbar{
+    .nav-items a{
+        display: block;
+        text-align: center;
+    }
+    .nav-items a :hover{
+             border-bottom: 1px solid red;
+    }
+    .nav-items{
         display: none;
     }
     .hamburger{
         display: block;
+    }
+    .display-flex{
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 30px;
+    }
+    .cancel{
     }
     .button{
         display: none;
     }
     .section3{
         display: block ;
+    }
+    nav{
+        display: block;
+    }
+    .logoimage{
+        display: block;
     }
     .section2{
         display: block;
